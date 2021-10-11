@@ -1,7 +1,5 @@
 void call() {
-        steps {
-                    dir('workdir') {
-                        sh 'echo "will apply"'
-                    }
-                }
+    dir('workdir') {
+        sh 'echo "will apply"'
+    }
 }
