@@ -1,12 +1,32 @@
 pipeline{
     agent any
-
     stages{
-        checkout()
-        setup()
-        plan()
-        apply()
-        post_apply()            
+        stage("checkout"){
+            steps{
+                checkout()
+            }
+        }
+        stage("setup") {
+            steps {
+                setup()
+            }
+        }
+        stage("plan"){
+            steps {
+                plan()
+            }
+        }
+        stage("apply"){
+            steps{
+                apply()
+            }
+        }
+        stage("post_apply"){
+            steps{
+                post_apply()
+            }
+        }
     }
+    
 }
             
