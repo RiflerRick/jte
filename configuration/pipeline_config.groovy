@@ -1,3 +1,4 @@
-@merge libraries {
+libraries {
+    merge=true
     terraform
 }
