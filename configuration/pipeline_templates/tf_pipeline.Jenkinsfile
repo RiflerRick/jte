@@ -16,11 +16,11 @@ pipeline{
                 apply()
             }
         }
-        stage("post_apply"){
-            steps{
-                post_apply()
-            }
-        }
+        // stage("post_apply"){
+        //     steps{
+        //         post_apply()
+        //     }
+        // }
     }
     
 }
