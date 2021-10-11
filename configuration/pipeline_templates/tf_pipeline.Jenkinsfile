@@ -1,7 +1,22 @@
+pipeline{
+    agent any
 
-checkout()
-setup()
-plan()
-apply()
-post_apply()
+    stages{
+        stage("checkout"){
+            checkout()
+        }
+        stage("setup"){
+            setup()
+        }
+        stage("plan"){
+            plan()
+        }
+        stage("apply"){
+            apply()
+        }
+        stage("post_apply"){
+            post_apply()            
+        }
+    }
+}
             

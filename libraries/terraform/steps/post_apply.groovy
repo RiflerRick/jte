@@ -1,5 +1,4 @@
 void call() {
-        stage('Post Apply') {
                 steps {
                     withCredentials([string(credentialsId: 'GITHUB_PAT', variable: 'GITHUB_PAT')]) {
                         dir("workdir") {
@@ -12,5 +11,4 @@ void call() {
                         }
                     }
                 }
-        }
 }

@@ -1,5 +1,4 @@
 void call() {
-        stage('Plan') {
             steps {
                     script {
                         dir("workdir") {
@@ -18,6 +17,5 @@ void call() {
                         }
                     }
                 }
-        }
     
 }

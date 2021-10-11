@@ -1,5 +1,5 @@
 void call() {
-    stage("setup"){
+    
         steps {
                         script {
                             withCredentials([string(credentialsId: 'GITHUB_PAT', variable: 'GITHUB_PAT')]) {
@@ -26,5 +26,4 @@ void call() {
                             }
                         }
                 }
-    }
 }
