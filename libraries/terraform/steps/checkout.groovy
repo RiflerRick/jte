@@ -1,4 +1,5 @@
 void call(){
+        stage("checkout"){
                 steps {
                     dir("workdir") {
                         checkout scm: [$class: 'GitSCM',
@@ -8,4 +9,5 @@ void call(){
                     }
                     
                 }
+        }
 }
