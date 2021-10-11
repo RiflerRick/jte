@@ -1,5 +1,5 @@
 void call() {
-    stage("apply")
+    stage("apply"){
         steps {
                     dir('workdir') {
                         sh 'echo "will apply"'

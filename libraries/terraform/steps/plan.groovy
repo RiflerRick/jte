@@ -1,5 +1,5 @@
 void call() {
-    stage("plan")
+    stage("plan"){
             steps {
                     script {
                         dir("workdir") {
